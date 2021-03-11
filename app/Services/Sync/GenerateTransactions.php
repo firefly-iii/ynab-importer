@@ -217,6 +217,7 @@ class GenerateTransactions
                 'description'      => '' === (string) $transaction['memo'] ? '(empty description)' : $transaction['memo'],
                 'date'             => $transaction['date'],
                 'notes'            => sprintf('Transaction ID: %s', $transaction['transaction_id']),
+                'category_name'    => $transaction['category_name'],
                 'source_id'        => null,
                 'source_name'      => $transaction['account_name'],
                 'destination_name' => $transaction['payee_name'],
